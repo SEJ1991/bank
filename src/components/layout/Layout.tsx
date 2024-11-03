@@ -1,14 +1,21 @@
 import { Outlet } from 'react-router-dom';
 
-import Anchor from '../elements/Anchor';
+import Navigator from '../Navigator';
 
 export default function Layout() {
+  const widthClass = 'w-full max-w-[430px]';
   return (
-    <div className='w-full max-w-[430px] h-full bg-primary-500 mx-auto my-0'>
+    <div className={`${widthClass} h-full bg-primary-500 mx-auto my-0`}>
       <Outlet />
-      <nav className='flex gap-2'>
-        <Anchor to='/'>홈</Anchor>
-      </nav>
+      <Navigator className={widthClass} items={NAV_ITEMS} />
     </div>
   );
 }
+
+const NAV_ITEMS: NavItem[] = [
+  { to: '/', children: '홈' },
+  { to: '/', children: '홈' },
+  { to: '/', children: '홈' },
+  { to: '/', children: '홈' },
+  { to: '/', children: '설정' },
+];
