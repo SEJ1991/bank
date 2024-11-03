@@ -17,7 +17,7 @@ export default function Navigator({ className, items }: Props) {
       {items.map(({ to, children }) => (
         <Anchor
           key={to}
-          className='flex justify-center items-center h-full text-sm border-primary-500 border-r last:border-none'
+          className='flex justify-center items-center h-full border-primary-500 border-r last:border-none'
           to={to}
         >
           {children}
