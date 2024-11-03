@@ -6,7 +6,13 @@ interface Props extends LinkProps {
 }
 export default function Anchor({ className, children, ...props }: Props) {
   return (
-    <Link className={twMerge('font-medium text-blue-950 hover:text-red-200', className)} {...props}>
+    <Link
+      className={twMerge(
+        'font-medium text-white hover:text-white/80 transition-colors duration-200',
+        className
+      )}
+      {...props}
+    >
       {children}
     </Link>
   );
