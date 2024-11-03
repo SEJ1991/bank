@@ -3,12 +3,11 @@ import { twMerge } from 'tailwind-merge';
 
 interface Props extends LinkProps {
   className?: string;
-  text?: string;
 }
-export default function Anchor({ className, text, ...props }: Props) {
+export default function Anchor({ className, children, ...props }: Props) {
   return (
     <Link className={twMerge('font-medium text-blue-950 hover:text-red-200', className)} {...props}>
-      {text}
+      {children}
     </Link>
   );
 }
