@@ -8,7 +8,7 @@ export default function Anchor({ className, children, ...props }: Props) {
   return (
     <Link
       className={twMerge(
-        'font-medium text-white hover:text-white/80 transition-colors duration-200',
+        'font-medium hover:text-white/80 transition-colors duration-200',
         className
       )}
       {...props}
