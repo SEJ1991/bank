@@ -5,10 +5,13 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#202020',
-          300: '#2E2E2E',
-          500: '#1E1E1E',
+          DEFAULT: 'var(--primary-color-default)',
+          300: 'var(--primary-color-300)',
+          500: 'var(--primary-color-500)',
         },
+      },
+      height: {
+        navi: 'var(--navigator-height)',
       },
     },
   },

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color-default: #202020;
+  --primary-color-300: #2e2e2e;
+  --primary-color-500: #1e1e1e;
+
+  --navigator-height: 3rem;
+}
+
 html,
 body,
 #root {

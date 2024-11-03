@@ -10,7 +10,7 @@ export default function Navigator({ className, items }: Props) {
   return (
     <nav
       className={twMerge(
-        'grid grid-cols-5 fixed bottom-0 h-12 bg-primary-300 rounded-tl-2xl rounded-tr-2xl',
+        'grid grid-cols-5 fixed bottom-0 h-navi bg-primary-300 rounded-tl-2xl rounded-tr-2xl',
         className
       )}
     >
