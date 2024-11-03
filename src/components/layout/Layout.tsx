@@ -7,7 +7,7 @@ export default function Layout() {
     <div className='w-full max-w-[600px] h-full bg-slate-800 mx-auto my-0'>
       <Outlet />
       <nav className='flex gap-2'>
-        <Anchor to='/' text='홈' />
+        <Anchor to='/'>홈</Anchor>
       </nav>
     </div>
   );
