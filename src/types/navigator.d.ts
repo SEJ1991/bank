@@ -1,4 +1,6 @@
 type NavItem = {
   to: string;
-  children: React.ReactNode;
+  name: string;
+  icon: IconType;
+  exact?: boolean;
 };
