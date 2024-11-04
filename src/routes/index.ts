@@ -1,7 +1,10 @@
 import { RouteObject } from 'react-router-dom';
 
-import Home from '../pages/Home';
+import { accountRoutes } from './accountRoute';
+import { tradeRoutes } from './tradeRoute';
+import { settingRoutes } from './settingRoute';
 import Layout from '../components/layout/Layout';
+import Home from '../pages/Home';
 
 export const routes: RouteObject[] = [
   {
@@ -12,6 +15,9 @@ export const routes: RouteObject[] = [
         index: true,
         Component: Home,
       },
+      ...accountRoutes,
+      ...tradeRoutes,
+      ...settingRoutes,
     ],
   },
 ];
